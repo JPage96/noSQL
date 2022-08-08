@@ -68,7 +68,6 @@ const userController = {
       .catch(err => res.json(err));
   },
 
-  // /api/users/:userid/fiends/:friendId
   addFriend({ params }, res) {
     User.findOneAndUpdate(
       { _id: params.userId },
